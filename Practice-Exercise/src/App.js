@@ -9,6 +9,8 @@ import SimpleForm from "./component/Formik/SimpleForm";
 import RegisterForm from "./component/Practice/RegisterForm";
 import ValidateForm from "./component/Practice/ValidateForm";
 import ValidateFormLogin from "./component/Practice/ValidateFormLogin";
+import ValidateFormLoginFormik from "./component/Practice/ValidateFormLoginFormik";
+import ContactForm from "./component/Exercise/ContactForm";
 
 
 function App() {
@@ -45,6 +47,12 @@ function App() {
                     <li>
                         <Link to={"/validate-form-login"}>Validate Form Login</Link>
                     </li>
+                    <li>
+                        <Link to={"/validate-form-login-formik"}>Validate Form Login Formik</Link>
+                    </li>
+                    <li>
+                        <Link to={"/contact-form-formik"}>Contact Form Login Formik</Link>
+                    </li>
 
 
                 </ul>
@@ -63,6 +71,8 @@ function App() {
                 <Route path="/register-form" element={<RegisterForm/>}/>
                 <Route path="/validate-form" element={<ValidateForm/>}/>
                 <Route path="/validate-form-login" element={<ValidateFormLogin/>}/>
+                <Route path="/validate-form-login-formik" element={<ValidateFormLoginFormik/>}/>
+                <Route path="/contact-form-formik" element={<ContactForm/>}/>
             </Routes>
 
 
