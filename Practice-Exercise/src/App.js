@@ -11,6 +11,7 @@ import ValidateForm from "./component/Practice/ValidateForm";
 import ValidateFormLogin from "./component/Practice/ValidateFormLogin";
 import ValidateFormLoginFormik from "./component/Practice/ValidateFormLoginFormik";
 import ContactForm from "./component/Exercise/ContactForm";
+import BookManager from "./component/Exercise/BookManager";
 
 
 function App() {
@@ -50,8 +51,12 @@ function App() {
                     <li>
                         <Link to={"/validate-form-login-formik"}>Validate Form Login Formik</Link>
                     </li>
+                    <h2>Exercise</h2>
                     <li>
                         <Link to={"/contact-form-formik"}>Contact Form Login Formik</Link>
+                    </li>
+                    <li>
+                        <Link to={"/book-manager-formik"}>Book Manager Formik</Link>
                     </li>
 
 
@@ -73,6 +78,7 @@ function App() {
                 <Route path="/validate-form-login" element={<ValidateFormLogin/>}/>
                 <Route path="/validate-form-login-formik" element={<ValidateFormLoginFormik/>}/>
                 <Route path="/contact-form-formik" element={<ContactForm/>}/>
+                <Route path="/book-manager-formik" element={<BookManager/>}/>
             </Routes>
 
 
