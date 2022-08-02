@@ -12,6 +12,7 @@ import ValidateFormLogin from "./component/Practice/ValidateFormLogin";
 import ValidateFormLoginFormik from "./component/Practice/ValidateFormLoginFormik";
 import ContactForm from "./component/Exercise/ContactForm";
 import BookManager from "./component/Exercise/BookManager";
+import ComposeMail from "./component/Exercise/ComposeMail";
 
 
 function App() {
@@ -58,6 +59,9 @@ function App() {
                     <li>
                         <Link to={"/book-manager-formik"}>Book Manager Formik</Link>
                     </li>
+                    <li>
+                        <Link to={"/compose-email"}>Compose Mail Formik</Link>
+                    </li>
 
 
                 </ul>
@@ -79,6 +83,7 @@ function App() {
                 <Route path="/validate-form-login-formik" element={<ValidateFormLoginFormik/>}/>
                 <Route path="/contact-form-formik" element={<ContactForm/>}/>
                 <Route path="/book-manager-formik" element={<BookManager/>}/>
+                <Route path="/compose-email" element={<ComposeMail/>}/>
             </Routes>
 
 

@@ -1,5 +1,7 @@
 .App {
     text-align: center;
+    margin-left: 40px;
+    width: 400px;
 }
 
 .App-logo {
@@ -66,4 +68,9 @@ label {
 .error {
     color: red;
     margin: 0;
+}
+
+.Left {
+    margin:0 0 40px 40px;
+    width: 400px;
 }
